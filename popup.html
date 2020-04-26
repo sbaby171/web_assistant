@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+        <!-- BUTTOM DETAILS -->
+        button {
+            color: #444444;
+            background: #F3F3F3;
+            border: 1px #DADADA solid;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 9pt;
+            outline: none;
+        }
+        button:hover {
+             border: 1px #C6C6C6 solid;
+             box-shadow: 1px 1px 1px #EAEAEA;
+             color: #333333;
+             background: #F7F7F7;
+        }
+        button:active {
+            box-shadow: inset 1px 1px 1px #DFDFDF;
+        }
+
+
+
+      body {
+        width : 400px;
+        height: 400px;
+      }
+
+        .matrix {
+            display: grid;
+            grid-gap: 5px;
+
+            grid-template-columns: 33% 33% 33%;
+
+            background-color: #fff;
+            color: #444;
+        }
+
+        .cell {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        .cell2 {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .header {
+            grid-column: 1 / span 3;
+        }
+        .invoke_ssi {
+            grid-column: 1;
+            grid-row: 2;
+            cursor: pointer;
+            text-align: center;
+           
+        }
+        .results_ssi {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+        p.results_ssi {
+            font-size: 14px;
+        }
+        .iv {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .v {
+            grid-column: 2 / span 2;
+            grid-row: 3;
+        }
+        .footer {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+
+      <div class="matrix">
+          <div class="cell header"><h3>Web Broswer Assistant Portal</h3></div>
+          <div class="cell invoke_ssi" id="invoke-ssi">Invoke SSI</div>
+          <div class="cell results_ssi" id="results-ssi">_results_ssi</div>
+          <div class="cell iv">iv</div>
+          <div class="cell v">v</div>
+          <div class="cell footer">Footer</div>
+      </div>
+
+
+      <!-- <button class="site" id="invoke-ssi">Invoke SSI</button> -->
+
+      <script src="popup.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "WBA",
+  "version": "0.1",
+  "description": "Web Browser Assistant",
+  "permissions": [ "activeTab", "declarativeContent", "storage",
+                   "contextMenus"],
+
+
+  "background": {
+    "scripts": [ "background.js","backgroundContextMenus.js"],
+    "persistent": false
+  },
+
+
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title":  "WebBrowserAssistant",
+    "default_icon": {
+      "16": "images/images/icons8-sign-language-w-50.png",
+      "32": "images/images/get_started32.png",
+      "48": "images/images/get_started48.png",
+      "128": "images/images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/images/icons8-sign-language-w-50.png",
+    "32": "images/images/get_started32.png",
+    "48": "images/images/get_started48.png",
+    "128": "images/images/get_started128.png"
+  },
+
+  "manifest_version": 2
+}
